@@ -14,7 +14,7 @@ $resp = curl_exec($curl);
 curl_close($curl);
 //var_dump($resp);
 $array = json_decode($resp);
-$imgurl = 'https://cn.bing.com'.$array->{"images"}[0]->{"urlbase"}.'_UHD.jpg';
+$imgurl = 'https://cn.bing.com'.$array->{"images"}[0]->{"urlbase"}.'_1080x1920.jpg';
 if ($imgurl) {
     header('Content-Type: image/JPEG');
     @ob_end_clean();
